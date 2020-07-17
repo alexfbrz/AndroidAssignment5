@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TableRow>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background Color"
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/backgroundColor"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/backgroundColorTxt"
+            />
+    </TableRow>
+        <TableRow>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text Color"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/textColor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/textColorTxt"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:background="@drawable/border"
+            android:layout_margin="5dp"
+
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/tv"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEXT COlOR"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:id="@+id/txtClr1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEXT COlOR"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="85dp"
+            android:id="@+id/txtClr2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEXT COlOR"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="125dp"
+            android:id="@+id/txtClr3"
+            />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bgTxt"
+                android:layout_margin="15dp"
+
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backgroundClrRadio"
+                    android:textSize="24sp"
+                    android:text="Background Color"
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtClrRadio"
+                    android:textSize="24sp"
+                    android:text="Text Color"
+
+                    />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                style="@style/forText"
+                android:layout_margin="10dp"
+                android:id="@+id/redL"
+                />
+
+            <SeekBar
+                android:id="@+id/redSB"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:progress="127"
+                android:min="0"
+                android:max="255"
+                style="@style/mySeekBar"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/redTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="127"
+                style="@style/forText"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                style="@style/forText"
+                android:layout_margin="10dp"
+                android:id="@+id/greenL"
+                />
+
+            <SeekBar
+                android:id="@+id/greenSB"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:progress="127"
+                android:min="0"
+                android:max="255"
+                style="@style/mySeekBar"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/greenTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="127"
+                style="@style/forText"
+                android:layout_margin="10dp"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                style="@style/forText"
+                android:layout_margin="10dp"
+                android:id="@+id/blueL"
+                />
+
+            <SeekBar
+                android:id="@+id/blueSB"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:progress="127"
+                android:min="0"
+                android:max="255"
+                style="@style/mySeekBar"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/blueTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="127"
+                style="@style/forText"
+                android:layout_margin="10dp"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
